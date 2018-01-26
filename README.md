@@ -1,2 +1,2 @@
 # Coursera
-Course
+Course repository

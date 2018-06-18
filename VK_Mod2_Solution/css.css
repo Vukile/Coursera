@@ -1,5 +1,153 @@
 h1{
-	margin-bottom: 15px;
-	text-align: middle;
-	text-decoration-color: blue;
+	margin-bottom: 20px;
+	text-align: center;	 
+}
+
+h3{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
+    position: static;
+    text-align: right;
+    vertical-align: sub;
+
+	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	
+    float:right; clear: right;
+    text-align: center;
+
+	border-bottom:1px solid black;
+	border-top: none;
+	border-left: 1px solid black;
+	border-right: none;
+	
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;	
+}
+
+p{
+	padding-top: 20px;
+	margin: 10px;
+
+}
+
+#para1{
+	background-color: #ff2817; 
+	text-align: center;
+}
+
+#para2{
+	background-color: 	#ff5f17;
+	text-align: center; 
+}
+
+#para3{
+	
+	background-color: #ff9413;
+	text-align: center;
+}
+
+.row{
+	width: 100%;
+}
+
+*{
+	box-sizing: border-box;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+section{
+
+	margin-right: 5px;
+	margin-left: 5px;
+	background-color: #6C5B7B;
+	font-family: Georgia, serif;
+	font-size: 14px;
+	float: left;
+	border: 1px solid black;
+	text-align: justify;
+
+}
+
+div{
+	padding-right: 5px;
+	margin: 5px;
+}
+
+
+/**************** Large Devices *******/
+@media(min-width: 992px)
+{
+ .col-lg-1, .col-lg-2,.col-lg-3{
+ 	float: left;
+ 	
+   }
+
+   .col-lg-1{
+	width: 25%
+   }
+
+   .col-lg-2{
+	width:16.66%;
+   }
+
+  .col-lg-3{
+	width: 32%
+  }
+
+  body{
+  	background-color: #F8B195;
+  }
+}
+
+/**************** Mediun Devices *******/
+@media(min-width:768px) and (max-width: 991px)
+{
+ .col-md-1, .col-md-2,.col-md-3{
+ 	float: left;
+ 	
+    }
+  	.col-md-1{
+ 		width:8.33%;
+ 	}
+ 	.col-md-2 {
+ 		width: 96%;
+ 	}
+ 	.col-md-3{
+ 		width:47%;
+ 	}
+
+  body{
+  	background-color: #F67280;
+  }
+
+}
+
+/**************** Small Devices *******/
+@media(max-width: 767px)
+{
+ .col-sm-1, .col-sm-2,.col-sm-3{
+ 	float: left;
+ 	
+   }
+   .col-sm-1{
+ 	width:50%;
+   }
+
+   .col-sm-2{
+ 	width:50%;
+   }
+
+   .col-sm-3{
+ 	width:100%;
+   }
+
+     body{
+  	background-color: #C06C84;
+  }
 }

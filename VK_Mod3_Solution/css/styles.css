@@ -1,0 +1,138 @@
+  /* Header */
+  .navbar-brand {
+    padding-top: 0px;
+    height: 80px;
+    margin: 0;
+  }
+
+  body {
+  font-size: 16px;
+  background-color: #ADADAD;
+  font-family: Inconsolata;
+}
+
+  #header-nav {
+  background-color: #64485C;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+
+h1{
+  color: #ffffff;
+}
+  .navbar-brand h1 
+  { /* Restaurant name */
+    
+    font-size: 3vw; /* 1vw = 1% of viewport width */
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+  }
+
+    #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    border-bottom: solid 1px;
+  }
+
+
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #ADADAD;
+  }
+
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: 0px;
+  }
+
+
+  #nav-list a {
+  color: #ffffff;
+  text-align: center;
+  background-color: #AC3B61;
+ }
+  #nav-list a:hover {
+  background: #ADADAD;
+  }
+  #nav-list a span {
+  font-size: 1.8em;
+  }
+
+  *{
+  box-sizing: border-box;
+   }
+
+section{
+  color: #ffffff;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: #64485C;
+  border: 2px solid black;
+  font-size: 14px;
+  height: 100%;
+  padding: 0px 15px 10px 15px;
+}
+
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px){
+  /* Header */
+   .navbar-brand {
+    padding-top: 25px;
+    height: 100px;
+    margin: 0;
+    text-align: left;
+    float: left;
+  }
+
+    .navbar-brand h1 
+  { /* Restaurant name */
+    font-size: 2vw; /* 1vw = 1% of viewport width */
+    text-align: left;
+    margin:0px 0px 50px 0px; 
+    padding: 0px 0px 30px 0px;
+    float: left;
+  }
+  /* End Header */
+
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 6vw; 
+  }
+  .navbar-brand p { 
+    font-size: .6em;
+    margin-top: 12px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+}
+

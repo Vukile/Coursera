@@ -63,22 +63,6 @@ var switchMenuToActive = function () {
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
 
-                    
-        
-   
-         
-     
-                                       
-                                     
-                                           
-                                          
-                                          
-              
-  
-                                                
-                                   
-
-        
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -105,9 +89,6 @@ function buildAndShowHomeHTML (categories) {
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       
-
-
-
       // STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
       // Look through this code for an example of how to do use the insertProperty function.
@@ -124,8 +105,6 @@ function buildAndShowHomeHTML (categories) {
 
       // where to inject, which property, value of property
       let homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", postprocessedCategoryShortname);
-                       
-                      
 
 
       // STEP 4: Insert the the produced HTML in STEP 3 into the main page
@@ -135,8 +114,6 @@ function buildAndShowHomeHTML (categories) {
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
 
-
-        
 
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
@@ -316,6 +293,7 @@ function buildMenuItemsViewHtml(categoryMenuItems,
   finalHtml += "</section>";
   return finalHtml;
 }
+
 
 // Appends price with '$' if price exists
 function insertItemPrice(html,
